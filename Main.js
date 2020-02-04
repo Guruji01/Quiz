@@ -15,7 +15,7 @@ if(question2 == "Delhi")
 if(question3 == "New_York")
 	correct++;
 
-var message = ["Great job !", "That's just okayt", "You really need to better"];
+var messages = ["Great job !", "That's just okay", "You really need to better"];
 
 var range;
 
@@ -23,15 +23,15 @@ if(correct <1)
 range = 2;
 
 if(correct >0 && correct<3)
-score = 1;
+range = 1;
 
 if(correct >2)
-score = 0;
+range = 0;
 
 
 document.getElementById("after_submit").style.visibility = "visible";
    
-
+document.getElementById("message").innerHTML= messages[range];
 document.getElementById("number_correct").innerHTML = "You got " + correct +" correct";
 }
 
