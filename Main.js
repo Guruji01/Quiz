@@ -16,7 +16,7 @@ if(question3 == "New_York")
 	correct++;
 
 var messages = ["Great job !", "That's just okay", "You really need to better"];
-
+var pic = ["1.jpg","2.jpg","3.jpg"];
 var range;
 
 if(correct <1)
@@ -33,6 +33,8 @@ document.getElementById("after_submit").style.visibility = "visible";
    
 document.getElementById("message").innerHTML= messages[range];
 document.getElementById("number_correct").innerHTML = "You got " + correct +" correct";
+document.getElementById("picture").src=pic[range];
+
 }
 
 
